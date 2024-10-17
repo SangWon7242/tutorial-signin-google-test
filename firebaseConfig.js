@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
 import { FIREBASE_API_KEY } from "@env";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: FIREBASE_API_KEY,
@@ -11,3 +12,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+
+// IOS 클라이언트 ID : 280057957535-c8as34mn9g0otj53k7fk6ohgab5slr3j.apps.googleusercontent.com
+// Android 클라이언트 ID : 280057957535-iepboa6iiesu3ur9q908drhtapmhetoa.apps.googleusercontent.com
