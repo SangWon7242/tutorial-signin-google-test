@@ -16,6 +16,20 @@
       "bundleIdentifier": "com.sang_won_park.signingoogletest"
     },
     "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "*.webapp.io",
+              "pathPrefix": "/records"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -29,6 +43,8 @@
       "eas": {
         "projectId": "d04b8ea5-ce67-4272-8c08-1407214c676d"
       }
-    }
+    },
+    "scheme": "signin-google-test",
+    "plugins": ["expo-font"]
   }
 }
