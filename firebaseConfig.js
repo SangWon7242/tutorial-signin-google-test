@@ -14,5 +14,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
+// web 클라이언트 ID : 280057957535-v9jmqi1r88q8l9fofh3qimp166v17jfl.apps.googleusercontent.com
 // IOS 클라이언트 ID : 280057957535-c8as34mn9g0otj53k7fk6ohgab5slr3j.apps.googleusercontent.com
 // Android 클라이언트 ID : 280057957535-iepboa6iiesu3ur9q908drhtapmhetoa.apps.googleusercontent.com
